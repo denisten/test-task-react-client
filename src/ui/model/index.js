@@ -4,6 +4,7 @@ import history from '../../storage/history';
 import {routerMiddleware, routerReducer} from './router';
 import auth from './scope/auth/auth';
 import selectPlugin from '@rematch/select';
+import users from './scope/users/users';
 
 const middlewares = [routerMiddleware];
 const reducers = {
@@ -16,7 +17,8 @@ if (process.env.NODE_ENV === 'development' || process.env.DEBUG === true) {
 
 const store = init({
     models: {
-        auth
+        auth,
+        users
     },
     redux: {
         middlewares,

@@ -31,7 +31,6 @@ const machine = new Machine({
 });
 
 const auth = new AuthApiService();
-
 export default {
     state: machine.current(),
     reducers: {

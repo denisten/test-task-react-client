@@ -7,5 +7,4 @@ export class AuthError extends BaseError {
         super(code, details);
         Object.setPrototypeOf(this, AuthError.prototype);
     }
-
 }

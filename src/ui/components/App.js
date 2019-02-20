@@ -15,7 +15,8 @@ import {AuthLayout} from "./common/AuthLayout";
 
 class App extends Component {
     render() {
-        return (<ThemeProvider theme={themes.orange}>
+        return (
+          <ThemeProvider theme={themes.orange}>
             <Root>
                 <Content>
                     <Provider store={store}>
