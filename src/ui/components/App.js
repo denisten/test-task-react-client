@@ -33,9 +33,9 @@ class App extends Component {
                                         }}/>
                                         <Route exact path='/users' component={() => {
                                             return (
-                                                <AuthLayout>
+                                                <div>
                                                     <UsersListPage/>
-                                                </AuthLayout>
+                                                </div>
                                             );
                                         }}/>
                                         <Route path='/' component={() => {

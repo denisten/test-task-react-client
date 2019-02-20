@@ -22,7 +22,7 @@ export class UsersListPage extends React.Component {
     });
         return (
             <div>
-              <span className="h1">Список пользователей:</span>
+              <div className="h1">Список пользователей:</div>
               <ul className="list-group box1">
                 {errorMessage}
                 {loading}

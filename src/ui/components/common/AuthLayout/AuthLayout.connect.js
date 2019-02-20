@@ -6,7 +6,6 @@ export default connect((state) => ({
     isInitial: select.auth.isInitial(state),
     isLoggedIn: select.auth.isLoggedIn(state),
     isLoading: select.auth.isLoading(state),
-    isLoadingUsers: select.users.isLoadingUsers(state),
     router: state.router
 }), (dispatch) => {
     return {
